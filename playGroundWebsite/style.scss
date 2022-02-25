@@ -527,6 +527,41 @@ a {
 			margin-bottom: 2.5rem;
 		}
 	}
+
+	.feature {
+		padding-top: 10rem;
+
+		&__item {
+			flex-direction: column;
+			margin-bottom: 8rem;
+
+			&:nth-child(even) {
+				flex-direction: column;
+			}
+
+			&:nth-child(even) .feature__info {
+				padding: 0;
+			}
+
+			&:nth-child(odd) .feature__info {
+				padding: 0;
+			}
+		}
+
+		&__image,
+		&__info {
+			width: 100%;
+		}
+
+		&__image img {
+			margin: 0 auto 5rem;
+		}
+	}
+
+	.partner {
+		padding-bottom: 4rem;
+		margin-bottom: 4rem;
+	}
 }
 
 @media screen and (max-width: 767px) {
@@ -542,6 +577,63 @@ a {
 
 		&__image {
 			height: 15rem;
+		}
+	}
+
+	.partner {
+		margin-bottom: 5rem;
+
+		&__list {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
+		&__item {
+			width: 50%;
+			padding-bottom: 2rem;
+
+			img {
+				margin: 0 auto;
+			}
+		}
+	}
+
+	.connect {
+		margin-bottom: 5rem;
+
+		&__list {
+			flex-wrap: wrap;
+		}
+
+		&__item {
+			width: calc(50% - 1rem);
+			margin-bottom: 2rem;
+		}
+	}
+
+	.subscribe {
+		&__container {
+			flex-direction: column;
+		}
+
+		&__title {
+			width: 100%;
+			margin: 0 auto 2rem;
+		}
+
+		&__info {
+			width: 100%;
+		}
+	}
+
+	.footer {
+		&__container {
+			flex-wrap: wrap;
+		}
+
+		&__item {
+			width: 100%;
+			margin-bottom: 2rem;
 		}
 	}
 }
